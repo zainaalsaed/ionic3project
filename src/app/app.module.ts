@@ -7,18 +7,20 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { EditPersonPage } from '../pages/edit-person/edit-person';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {AngularFireModule } from 'angularfire2';
-import {AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database-deprecated";
-const config = {
-  apiKey: "AIzaSyCwiXF9eZ9COKD1M_o0NEUnVn5iLpJQ5Ho",
-  authDomain: "ionicdb-a5adf.firebaseapp.com",
-  databaseURL: "https://ionicdb-a5adf.firebaseio.com",
-  storageBucket: "ionicdb-a5adf.appspot.com",
-  messagingSenderId: "700212344824"
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+const firebaseAuth = {
+    apiKey: "AIzaSyDaMitUUxNTOo7uWpsRuhDtl4ox7cvR1FA",
+    authDomain: "test-project-ca0ec.firebaseapp.com",
+    databaseURL: "https://test-project-ca0ec.firebaseio.com",
+    projectId: "test-project-ca0ec",
+    storageBucket: "",
+    messagingSenderId: "778431294120"
 };
 
 
@@ -28,17 +30,14 @@ const config = {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    EditPersonPage
+    TabsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(config),
+    AngularFireModule.initializeApp(firebaseAuth),
     AngularFireDatabaseModule,
-    AngularFireDatabase,
-     FirebaseListObservable 
-    
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,13 +45,15 @@ const config = {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    EditPersonPage
+    TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
+
   ]
+  
 })
 export class AppModule {}

@@ -6,37 +6,7 @@
 
 <ion-content padding>
   
-  <ion-list>
-    <ion-item-sliding *ngFor=" let person of persons | async">
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="img/slimer.png">
-        </ion-avatar>
-        <h2>{{person.name}}</h2>
-        <p> last name: {{person.lname}} -
-          age : {{person.age}} -
-          department : {{person.dept}}
-          </p>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="text"></ion-icon>
-          Text
-        </button>
-        <button ion-button color="secondary">
-          <ion-icon name="call"></ion-icon>
-          Call
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="primary">
-          <ion-icon name="mail"></ion-icon>
-          Email
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
-  
+ 
   
   </ion-content>
 
