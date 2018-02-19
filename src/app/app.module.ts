@@ -12,9 +12,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-
+import {IonicPageModule} from 'ionic-angular';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
-import { StartPage } from '../pages/start/start';
+//import { StartPage } from '../pages/start/start';
 const firebaseAuth = {
     apiKey: "AIzaSyDaMitUUxNTOo7uWpsRuhDtl4ox7cvR1FA",
     authDomain: "test-project-ca0ec.firebaseapp.com",
@@ -31,10 +31,11 @@ const firebaseAuth = {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    StartPage
+    TabsPage
+   // StartPage
   ],
   imports: [
+    
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseAuth),

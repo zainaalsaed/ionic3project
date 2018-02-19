@@ -13,5 +13,5 @@ export class AboutPage {
   constructor(public navCtrl: NavController,
     private afAuth: AngularFireAuth) { }
 
-
+  
 }

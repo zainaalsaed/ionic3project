@@ -7,9 +7,32 @@
 </ion-header>
 
 <ion-content padding>
-  pppp
-	<button ion-button outline (click)="signInWithFacebook()">Login</button>  
-  <button ion-button outline (click)="signOut()">Logout</button>
+
+	
+  
+		<ion-list>
+	
+		<ion-item>
+			<ion-label floating>Username</ion-label>
+			<ion-input type="text" #username></ion-input>
+		</ion-item>
+	
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input type="password" #password></ion-input>
+		</ion-item>
+		
+	</ion-list>
+	
+	<div padding>
+		<button ion-button (click)="signInWithFacebook()">
+			<ion-icon name="logo-facebook"></ion-icon>
+			 Login With Facebook
+		</button>
+		
+	</div>
+		 
+  	<button block ion-button (click)="registerUser()" item-left>Sign up</button>
 </ion-content>
 
 
