@@ -9,7 +9,7 @@ import * as firebase from 'firebase/app';
   selector: 'page-register',
   templateUrl: 'register.html'
 })
-export class registerPage {
+export class RegisterPage {
 
   
   @ViewChild('username') user;
