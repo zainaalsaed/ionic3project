@@ -10,7 +10,6 @@ import { FirebaseError } from '@firebase/util';
 export class ContactPage {
 
 
-  
   constructor(private alertCtrl: AlertController, private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   
   }
