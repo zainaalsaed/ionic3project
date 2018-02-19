@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { registerPage } from '../pages/register/register';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -30,7 +30,7 @@ const firebaseAuth = {
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
+    registerPage,
     HomePage,
     TabsPage
    
@@ -48,7 +48,7 @@ const firebaseAuth = {
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    registerPage,
     HomePage,
     TabsPage
   ],

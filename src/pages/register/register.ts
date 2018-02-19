@@ -6,10 +6,10 @@ import {TabsPage}  from '../tabs/tabs';
 import * as firebase from 'firebase/app';
 //@IonicPage()
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html'
+  selector: 'page-register',
+  templateUrl: 'register.html'
 })
-export class ContactPage {
+export class registerPage {
 
   
   @ViewChild('username') user;
