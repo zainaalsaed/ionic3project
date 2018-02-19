@@ -51,7 +51,7 @@ export class HomePage {
     this.afAuth.auth .signInWithPopup(new firebase.auth.FacebookAuthProvider()) .then(res => console.log(res));
   }
 
-  registerUser() {
+  registerUser1() {
     this.navCtrl.push(TabsPage);
   }
 

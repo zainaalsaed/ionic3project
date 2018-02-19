@@ -6,10 +6,17 @@
 	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="login-content">
 
 	
-  
+		<ion-row class="logo-row">
+				<ion-col></ion-col>
+				<ion-col width-67>
+					<img src="http://placehold.it/300x200"/>
+				</ion-col>
+				<ion-col></ion-col>
+			</ion-row>
+			<div class="login-box">
 		<ion-list>
 	
 		<ion-item>
@@ -24,15 +31,19 @@
 		
 	</ion-list>
 	
-	<div padding>
-		<button ion-button (click)="signInWithFacebook()">
+	<ion-row>
+			<ion-col class="signup-col">
+		<button ion-button (click)="signInWithFacebook()" class="submit-btn">
 			<ion-icon name="logo-facebook"></ion-icon>
 			 Login With Facebook
 		</button>
 		
-	</div>
+
 		 
-  	<button block ion-button (click)="registerUser()" item-left>Sign up</button>
+		<button clear ion-button (click)="registerUser1()" item-left class="register-btn">Create New Account</button>
+	</ion-col>
+</ion-row>	
+	</div>
 </ion-content>
 
 
