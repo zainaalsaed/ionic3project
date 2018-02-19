@@ -14,6 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { StartPage } from '../pages/start/start';
 const firebaseAuth = {
     apiKey: "AIzaSyDaMitUUxNTOo7uWpsRuhDtl4ox7cvR1FA",
     authDomain: "test-project-ca0ec.firebaseapp.com",
@@ -30,7 +31,8 @@ const firebaseAuth = {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    StartPage
   ],
   imports: [
     BrowserModule,
